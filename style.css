@@ -15,7 +15,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; Garante que o body ocupe pelo menos a tela toda */
+  min-height: 100vh; /* Garante que o body ocupe pelo menos a tela toda */
 }
 
 /* Header com menu */
