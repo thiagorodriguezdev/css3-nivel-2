@@ -1,16 +1,27 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
+/* Estrutura principal com flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o body ocupe pelo menos a tela toda */
+}
+
+/* Header com menu */
 header {
   padding: 80px;
-  background-color: #13161F;
+  background-color: #13161f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,11 +43,48 @@ header .nav li a {
   font-size: 18px;
   border: 1px solid #ffffff4b;
   border-radius: 999px;
-  transition: all 0.3s ease ;
+  transition: all 0.3s ease;
 }
 
 header .nav li a:hover {
   background-color: #ffffff;
   color: #6e6f70;
   border: 1px solid transparent;
+}
+
+/* Conteúdo principal */
+section {
+  display: flex;
+  flex: 1; /* Faz o section crescer e empurrar o footer para baixo */
+  background-color: #0d0f11;
+  color: #c1c1c1;
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section article {
+  max-width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #67696c;
+  background-color: #2c2e32;
+  height: 350px;
+}
+
+footer {
+  background-color: #070707;
+  padding: 80px;
+  text-align: center;
+}
+
+footer h2 {
+  color: #0F95E3;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+footer p {
+  color: #585A58;
+  font-size: 14px;
 }
