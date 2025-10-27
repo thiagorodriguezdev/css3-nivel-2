@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 80px;
+  background-color: #13161F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .nav {
+  display: flex;
+  gap: 50px;
+}
+
+header .nav li {
+  list-style: none;
+}
+
+header .nav li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 18px;
+  border: 1px solid #ffffff4b;
+  border-radius: 999px;
+  transition: all 0.3s ease ;
+}
+
+header .nav li a:hover {
+  background-color: #ffffff;
+  color: #6e6f70;
+  border: 1px solid transparent;
+}
