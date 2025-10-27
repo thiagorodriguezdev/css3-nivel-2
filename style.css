@@ -15,12 +15,12 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garante que o body ocupe pelo menos a tela toda */
+  /* min-height: 100vh; Garante que o body ocupe pelo menos a tela toda */
 }
 
 /* Header com menu */
 header {
-  padding: 80px;
+  padding: 60px;
   background-color: #13161f;
   display: flex;
   justify-content: center;
@@ -71,6 +71,13 @@ section article {
   border: 1px solid #67696c;
   background-color: #2c2e32;
   height: 350px;
+}
+
+article img {
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
 }
 
 footer {
